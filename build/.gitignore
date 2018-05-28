@@ -1,0 +1,7 @@
+/*
+!/.gitignore
+!/conf
+/conf/*
+!/conf/bblayers.conf
+!/conf/local.conf
+!/conf/templateconf.cfg
