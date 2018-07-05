@@ -5,5 +5,5 @@ inherit krzk-image
 
 IMAGE_INSTALL += " \
     broadcom-bt-firmware \
-    crda \
+    wireless-regdb-static \
 "

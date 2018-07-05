@@ -1,1 +1,2 @@
-inherit kernel_wireless_regdb
+# For testing:
+#inherit kernel_wireless_regdb
