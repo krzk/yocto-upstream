@@ -6,6 +6,7 @@ You can now run 'bitbake <target>'
 Common targets for distro krzk are:
     core-image-minimal
     krzk-bt-wifi-image
+    krzk-libkcapi-image
     krzk-lshw-image
     krzk-python-image
     krzk-websocket-image
