@@ -1,4 +1,4 @@
-SUMMARY = "Basic testing image: firmware"
+SUMMARY = "Basic testing image"
 LICENSE = "MIT"
 
 inherit krzk-image
