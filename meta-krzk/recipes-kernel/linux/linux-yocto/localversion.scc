@@ -1,0 +1,4 @@
+define KFEATURE_DESCRIPTION "Enable LOCALVERSION_AUTO"
+define KFEATURE_COMPATIBILITY all
+
+kconf non-hardware localversion.cfg
