@@ -41,3 +41,8 @@ SRC_URI += " \
     file://localversion.scc \
     file://localversion.cfg \
 "
+
+# Workaround for kernel.bbclass oldnoconfig:
+# Since v4.19 "oldnoconfig" is gone. Before it was an alias to "olddefconfig" so fix it here.
+# Copied from poky/meta/classes/kernel.bbclass.
+KERNEL_CONFIG_COMMAND = "oe_runmake_call -C ${S} CC="${KERNEL_CC}" O=${B} olddefconfig"
