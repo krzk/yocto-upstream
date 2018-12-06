@@ -7,7 +7,7 @@
 LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 SRCREV = "${AUTOREV}"
-LINUX_VERSION = "4.18.0-rc5+git${SRCPV}"
+LINUX_VERSION = "4.20.0-rc5+git${SRCPV}"
 PV = "${LINUX_VERSION}"
 
 S = "${WORKDIR}/git"
@@ -30,10 +30,10 @@ SRCREV_machine = "${SRCREV}"
 
 # Force revision for kernel-meta from v4.15 (cause version mismatch might
 # cause using different kernel recipe, e.g. v4.12):
-SRCREV_meta = "939d935b0c992c6f1e51a7a1c9e4fbe6ef3c3174"
+SRCREV_meta = "45c256a5ca6f9478bce212fec19e2bc273472631"
 
 # Silence mismatch between SRCREV and LINUX_VERSION:
-KERNEL_VERSION_SANITY_SKIP="1"
+KERNEL_VERSION_SANITY_SKIP = "1"
 
 # Bring localversion:
 inherit kernel-localversion
