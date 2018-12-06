@@ -46,3 +46,7 @@ SRC_URI += " \
 # Since v4.19 "oldnoconfig" is gone. Before it was an alias to "olddefconfig" so fix it here.
 # Copied from poky/meta/classes/kernel.bbclass.
 KERNEL_CONFIG_COMMAND = "oe_runmake_call -C ${S} CC="${KERNEL_CC}" O=${B} olddefconfig"
+
+# fold is necessary to fix:
+# | build/tmp/work-shared/qemux86/kernel-source/scripts/atomic/atomic-tbl.sh: line 183: fold: command not found
+DEPENDS += "coreutils-native"
