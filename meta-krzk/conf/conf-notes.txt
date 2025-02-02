@@ -4,7 +4,8 @@
 You can now run 'bitbake <target>'
 
 Common targets for distro krzk are:
+    board-test-image
     core-image-minimal
 
 For distro krzk-musl:
-    DISTRO=krzk-musl bitbake core-image-minimal
+    DISTRO=krzk-musl bitbake board-test-image
