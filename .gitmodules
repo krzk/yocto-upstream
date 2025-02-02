@@ -4,5 +4,5 @@
 	branch = sumo
 [submodule "meta-openembedded"]
 	path = meta-openembedded
-	url = http://cgit.openembedded.org/meta-openembedded
+	url = https://git.openembedded.org/meta-openembedded
 	branch = sumo
