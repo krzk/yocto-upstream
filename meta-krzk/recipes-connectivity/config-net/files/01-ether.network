@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2025 Krzysztof Kozlowski <krzk@kernel.org>
+
+[Match]
+Name=enu1
+
+[Network]
+DHCP=ipv4
