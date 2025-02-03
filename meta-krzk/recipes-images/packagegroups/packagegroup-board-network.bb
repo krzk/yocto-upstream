@@ -8,4 +8,5 @@ inherit packagegroup
 
 RDEPENDS:${PN} = "\
     config-net \
+    ssh-keys \
     "
