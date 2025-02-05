@@ -19,7 +19,7 @@ NO_RECOMMENDATIONS ?= "1"
 
 # FIXME: decide about debug-tweaks
 IMAGE_FEATURES = "ssh-server-dropbear allow-root-login"
-IMAGE_FSTYPES = "${INITRAMFS_FSTYPES} cpio.gz.u-boot"
+IMAGE_FSTYPES = "${INITRAMFS_FSTYPES} cpio.xz cpio.gz.u-boot"
 
 # Enable local auto-login (on systemd) of the root user (local = serial port and
 # virtual console by default, can be configured).
