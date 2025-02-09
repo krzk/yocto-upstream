@@ -8,4 +8,5 @@ inherit packagegroup
 
 RDEPENDS:${PN} = "\
     krzk-tools \
+    util-linux-dmesg \
     "
