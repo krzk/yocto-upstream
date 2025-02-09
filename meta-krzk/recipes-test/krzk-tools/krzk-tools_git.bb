@@ -14,6 +14,7 @@ PV = "0.0+git${SRCPV}"
 S = "${WORKDIR}/git"
 
 RDEPENDS:${PN} = "\
+    bash \
     gzip \
     udev \
     usbutils \
