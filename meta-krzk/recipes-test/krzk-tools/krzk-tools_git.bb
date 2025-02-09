@@ -21,7 +21,7 @@ RDEPENDS:${PN} = "\
 
 do_install () {
     install -dm 0755 ${D}/opt/tools/tests/
-    install -m 0644 ${S}/tests/* ${D}/opt/tools/tests/
+    install -m 0755 ${S}/tests/* ${D}/opt/tools/tests/
 }
 
 FILES:${PN} = "\
