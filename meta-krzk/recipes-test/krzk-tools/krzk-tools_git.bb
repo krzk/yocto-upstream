@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=2c1c00f9d3ed9e24fa69b932b7e7aff2"
 
 SRC_URI = "git://github.com/krzk/tools.git;branch=master;protocol=https"
 
-SRCREV = "ec88949ec4c621d72abeee4b40ba46171eb45276"
+SRCREV = "4a6648e42c7b1bd3fdc50d70538ff76f38a4f737"
 PV = "0.0+git${SRCPV}"
 # No real versions here, so silence:
 # ERROR: krzk-tools-0.0+git-r0 do_packagedata: QA Issue: Package version for package krzk-tools-src went backwards which would break package feeds
