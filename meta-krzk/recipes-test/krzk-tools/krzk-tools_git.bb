@@ -16,6 +16,7 @@ ERROR_QA:remove = "version-going-backwards"
 
 S = "${WORKDIR}/git"
 
+# util-linux-rtcwake or CONFIG_RTCWAKE enabled in busybox
 RDEPENDS:${PN} = "\
     bash \
     gzip \
