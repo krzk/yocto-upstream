@@ -5,4 +5,8 @@
 Name=enu1
 
 [Network]
+# Some boards, like Odroid X, have random MAC address (U-Boot does not support
+# setting it), so DHCP will break stuff, thus keep kernel's configuration
 DHCP=ipv4
+# Prevent releasing of existing IP so kernel-configured NFS root will not be broken (systemd v243+)
+KeepConfiguration=static
