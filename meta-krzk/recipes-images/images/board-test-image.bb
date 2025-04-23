@@ -18,19 +18,11 @@ IMAGE_INSTALL = "\
 NO_RECOMMENDATIONS ?= "1"
 
 # FIXME: decide about debug-tweaks
-IMAGE_FEATURES = "ssh-server-dropbear allow-root-login"
+# empty-root-password+serial-autologin-root is needed for
+# serial_autologin_root() rootfs postprocess command.  It still should not
+# allow empty password root SSH login, though.
+IMAGE_FEATURES = "ssh-server-dropbear allow-root-login empty-root-password serial-autologin-root"
 IMAGE_FSTYPES = "${INITRAMFS_FSTYPES} cpio.xz cpio.gz.u-boot"
-
-# Enable local auto-login (on systemd) of the root user (local = serial port and
-# virtual console by default, can be configured).
-LOCAL_GETTY ?= "\
-    ${IMAGE_ROOTFS}${systemd_system_unitdir}/serial-getty@.service \
-    ${IMAGE_ROOTFS}${systemd_system_unitdir}/getty@.service \
-    "
-local_autologin () {
-    sed -i -e 's/^\(ExecStart *=.*getty \)/\1--autologin root /' ${LOCAL_GETTY}
-}
-ROOTFS_POSTPROCESS_COMMAND += "${@oe.utils.conditional('VIRTUAL-RUNTIME_init_manager', 'systemd', 'local_autologin;', '', d)}"
 
 # From core-image-minimal-initramfs
 # #################################
