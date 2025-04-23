@@ -2,7 +2,10 @@
 # Copyright (C) 2025 Krzysztof Kozlowski <krzk@kernel.org>
 
 [Match]
-Name=enu1
+# With newer systemd 254 the interface name is not stable
+# Odroid X, U3, XU, XU3: smsc95xx
+# Odroid HC1: r8152
+Driver=smsc95xx r8152
 
 [Network]
 # Some boards, like Odroid X, have random MAC address (U-Boot does not support
