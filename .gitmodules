@@ -6,3 +6,6 @@
 	path = meta-openembedded
 	url = https://git.openembedded.org/meta-openembedded
 	branch = sumo
+[submodule "meta-qcom"]
+	path = meta-qcom
+	url = https://github.com/Linaro/meta-qcom.git

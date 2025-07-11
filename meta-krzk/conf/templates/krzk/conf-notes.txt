@@ -4,8 +4,13 @@
 You can now run 'bitbake <target>'
 
 Common targets for distro krzk are:
-    board-test-image
-    core-image-minimal
+    bitbake board-test-image
+    MACHINE=qemuarm64 bitbake board-qcom-image
+    bitbake core-image-minimal
+
+Machines
+    odroid (default): ARMv7 boards in the lab
+    qemuarm64: ARM64 boards of Qualcomm Landing Team
 
 For distro krzk-musl:
     DISTRO=krzk-musl bitbake board-test-image
