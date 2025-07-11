@@ -9,7 +9,7 @@ LICENSE = "MIT"
 
 IMAGE_INSTALL = "\
     packagegroup-core-boot \
-    packagegroup-board-network \
+    packagegroup-board-network-lab \
     packagegroup-board-tests \
     ${ROOTFS_BOOTSTRAP_INSTALL} \
     "

@@ -1,12 +1,12 @@
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2025 Krzysztof Kozlowski <krzk@kernel.org>
 
-SUMMARY = "Packages for networking setup for board testing"
+SUMMARY = "Packages for networking setup for board testing in the lab / board farm"
 LICENSE = "MIT"
 
 inherit packagegroup
 
 RDEPENDS:${PN} = "\
-    config-net \
+    config-net-lab \
     ssh-keys \
     "
