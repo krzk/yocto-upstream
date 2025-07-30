@@ -8,8 +8,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=2c1c00f9d3ed9e24fa69b932b7e7aff2"
 
 SRC_URI = "git://github.com/krzk/tools.git;branch=master;protocol=https"
 
-SRCREV = "2e07615f54bec3e7da7dc3f60cd4454dc9377a69"
-PV = "0.0-r2+git${SRCPV}"
+SRCREV = "69ffd206e4187e6a98fea07921d852498cdaf7ae"
+PV = "0.0-r3+git${SRCPV}"
 # No real versions here, so silence:
 # ERROR: krzk-tools-0.0+git-r0 do_packagedata: QA Issue: Package version for package krzk-tools-src went backwards which would break package feeds
 ERROR_QA:remove = "version-going-backwards"
