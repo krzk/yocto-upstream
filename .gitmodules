@@ -1,11 +1,11 @@
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky.git
-	branch = sumo
+	branch = scarthgap
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = https://git.openembedded.org/meta-openembedded
-	branch = sumo
+	branch = scarthgap
 [submodule "meta-qcom"]
 	path = meta-qcom
 	url = https://github.com/Linaro/meta-qcom.git
